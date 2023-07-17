@@ -17,6 +17,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       # debugging
+
       - run: echo "===================="
+      - run: |
+        BUILD_NUMBER='100'
+        BUILD_NUMBER=`printf %07d $BUILD_NUMBER`
       - run: echo "${BUILD_NUMBER}"
       - run: echo "===================="
