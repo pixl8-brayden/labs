@@ -20,7 +20,7 @@ jobs:
 
       - run: echo "===================="
       - run: |
-        BUILD_NUMBER="100"
-        BUILD_NUMBER=`printf %07d $BUILD_NUMBER`
+          BUILD_NUMBER="100"
+          BUILD_NUMBER=`printf %07d $BUILD_NUMBER`
       - run: echo "${BUILD_NUMBER}"
       - run: echo "===================="
